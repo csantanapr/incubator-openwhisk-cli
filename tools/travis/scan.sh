@@ -44,3 +44,4 @@ scancode/scanCode.py --config scancode/ASF-Release.cfg $TRAVIS_BUILD_DIR
 #
 cd $TRAVIS_BUILD_DIR
 ./gradlew --console=plain goLint
+
