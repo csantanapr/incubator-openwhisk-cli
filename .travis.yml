@@ -64,6 +64,7 @@ script:
   - cd $TRAVIS_BUILD_DIR/../incubator-openwhisk
   - ./gradlew install
   - cd $TRAVIS_BUILD_DIR
+  - ./tools/travis/scan.sh
   - export BUILD_VERSION="latest"
   - if [ ! -z "$TRAVIS_TAG" ] ; then
         export BUILD_VERSION=$TRAVIS_TAG;
